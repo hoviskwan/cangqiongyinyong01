@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeployMetadata>
+  <MasterId>64=4JHJPPF0+</MasterId>
+  <Id>64=4JHJPPF0+</Id>
+  <DesignMetas>
+    <DesignFormMetaL>
+      <Number>bnuy_sales_quotation</Number>
+      <PkId>64L9=3S6Q90/</PkId>
+      <DataXml>
+        <FormMetadata/>
+      </DataXml>
+      <Name>销售报价管理</Name>
+      <Id>64=4JHJPPF0+</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignFormMetaL>
+    <DesignEntityMetaL>
+      <Number>bnuy_sales_quotation</Number>
+      <PkId>64L9=3TW+R5H</PkId>
+      <DataXml>
+        <EntityMetadata/>
+      </DataXml>
+      <Name>销售报价管理</Name>
+      <Id>64=4JHJPPF0+</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignEntityMetaL>
+  </DesignMetas>
+  <Version>1792395417749</Version>
+  <BOSVersion>1.0</BOSVersion>
+</DeployMetadata>

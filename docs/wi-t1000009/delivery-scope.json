@@ -1,0 +1,18 @@
+{
+  "environmentFile": "/Users/kingdee/lingeebuild/workspaces/4cdb6fbdbc8f7607774bbab0e72367d6f90eae882d154fd177ee81bec1449958/苍穹技术栈应用开发/.lingee-task-worktrees/wi-t1000009/app/bnuy_app_demo01/_runtime/test-environment.json",
+  "completed": [
+    {"itemId": "R-001", "evidence": ["bnuy_sales_quotation 表头六字段已就位并回读：客户(CustomerField)、报价日期(DateField)、销售员(UserField)、币别(ComboField 下拉)、有效期(DateField)、报价状态(ComboField 下拉)"]},
+    {"itemId": "R-002", "evidence": ["明细分录 bnuy_sales_quota_entry 五字段已就位并回读：产品(MaterielField 引用 bd_material)、数量(DecimalField)、单价(PriceField)、折扣率(DecimalField)、报价金额(AmountField)"]},
+    {"itemId": "R-003", "evidence": ["bizRule FormulaAction 已写入（ruleId 64L8/0V95NZM，平台返回添加成功）：报价金额 = 数量 × 单价 × 折扣率，触发字段为数量/单价/折扣率"]},
+    {"itemId": "R-004", "evidence": ["报价状态 ComboField 选项经平台写入确认：未提交(draft)/已提交(submitted)/已审核(audited)，默认值“未提交”属性写入已验证"]},
+    {"itemId": "R-005", "evidence": ["queryMenuTree 回读：页面菜单“销售报价管理”(menuId 64=4KVE515UH) 绑定 bnuy_sales_quotation、visible=1、位于应用根节点；getApp 回读应用 deploystatus=1 已启用"]},
+    {"itemId": "E-004", "evidence": ["setProperties 已验证：报价日期默认当天(getToday)、销售员默认当前登录人(getCurrentUser)、折扣率默认 1、报价状态默认未提交"]},
+    {"itemId": "E-005", "evidence": ["save 操作校验已写入并验证：MustInputValidation 启用(Id RS=8GBXGZY4)、有效期不得早于报价日期、折扣率 0~1、数量与单价非负；明细至少一行由已注册操作插件 BnuySalesQuotationOpPlugin(save) 实现，注册回读 verified=true"]},
+    {"itemId": "E-006", "evidence": ["单据基于 bos_billtpl 标准模板：手工单据编号，保存/提交/审核标准生命周期按钮(bar_save/bar_submit/bar_audit)已在工具栏就位"]}
+  ],
+  "remaining": [
+    {"itemId": "E-001", "reason": "币别按用户原始“下拉”要求以标准下拉选项(人民币/美元/港元/欧元/日元/英镑)实现，未将既有 ComboField 迁移为关联 bd_currency 的平台标准币别字段；当前环境无字段类型迁移通道，迁移需删除重建并有控件引用丢失风险，故保留下拉实现", "category": "implementation"}
+  ],
+  "summary": "销售报价管理单据已在 Demo应用01(bnuy_app_demo01) 下完成开发：表头六字段（客户、报价日期、销售员、币别、有效期、报价状态）与明细五字段（产品、数量、单价、折扣率、报价金额）结构、必填、默认值、下拉选项均按需求配置；报价金额按“数量 × 单价 × 折扣率”自动计算；保存校验覆盖必填、有效期不早于报价日期、折扣率 0~1、数量单价非负、明细至少一行（操作插件实现并已注册）；“销售报价管理”菜单已发布且应用已启用。",
+  "notes": "1) 本地未配置 Java Gradle 编译工程，插件源码经平台注册成功（回读 verified）但 javac 未运行（compile=false 按配置跳过），源码可编译性未经编译器证明；插件 activation.runtimeVerified=false，保存拦截的实际生效需在目标环境验证。2) 演示云后端完整元数据读取接口受限：报价状态与币别选项、计算规则的平台写入均已返回成功，但独立回读无法核对，运行态显示（下拉选项、金额刷新、校验提示）尚未验证。3) 数量字段为 DecimalField（满足小数要求），未配套计量单位字段；产品暂未配置选择后带出单位。4) 以上运行态项目留待质量阶段按 AC 实际打开单据验证。"
+}
