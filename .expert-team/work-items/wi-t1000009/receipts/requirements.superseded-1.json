@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "cosmic-requirements",
+  "specId": "cosmic-development-spec",
+  "graphRevision": 13,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:a51caf1d881e52dc95e1477696dd73101418d63d5ff9f14df2e4cf2301a44347",
+  "createdAt": "2026-10-19T06:58:47.571Z",
+  "timing": {
+    "startedAt": "2026-10-19T06:51:42.992Z",
+    "completedAt": "2026-10-19T06:58:47.571Z",
+    "durationMs": 424579
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000009/requirements.md",
+      "bytes": 14185,
+      "sha256": "sha256:110a4bfa9018a0ed1d3d58fa49df5fb144823a30910571d229d93f8514e1d2cd",
+      "title": "销售报价管理 · 需求规格说明书"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}

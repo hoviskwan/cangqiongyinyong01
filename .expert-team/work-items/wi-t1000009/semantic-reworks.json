@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "stages": {
+    "requirements": [
+      {
+        "sourceReceiptId": "requirements:1",
+        "sourceArtifactSha256": "sha256:110a4bfa9018a0ed1d3d58fa49df5fb144823a30910571d229d93f8514e1d2cd",
+        "code": "SEMANTIC_ARTIFACT_VALIDATION_FAILED",
+        "reopenedAt": "2026-10-19T06:58:47.622Z"
+      },
+      {
+        "sourceReceiptId": "requirements:3",
+        "sourceArtifactSha256": "sha256:fefbdb71d64ebac69112dbc05be232c2ed5d7b9ccbb88a736fb023e62dfbb2bd",
+        "code": "SEMANTIC_ARTIFACT_VALIDATION_FAILED",
+        "reopenedAt": "2026-10-19T07:01:34.676Z"
+      }
+    ]
+  }
+}

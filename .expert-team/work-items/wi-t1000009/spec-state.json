@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "specId": "cosmic-development-spec",
+  "specRevision": 13,
+  "state": "requirements_ready",
+  "revision": 7,
+  "completedActions": [
+    "requirements"
+  ],
+  "blockers": [],
+  "deliveryProfile": "standard",
+  "graphRevision": 13,
+  "graphHash": "sha256:492fdd1cba4403b3bd50b0814abbda7078f0b53ef55636c58416084ac933136a",
+  "updatedAt": "2026-10-19T07:07:31.442Z"
+}
