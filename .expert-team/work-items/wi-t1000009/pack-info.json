@@ -670,7 +670,7 @@
     }
   ],
   "executionStageIds": [
-    "app-build"
+    "acceptance"
   ],
   "failureMappings": [
     {
